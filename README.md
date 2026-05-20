@@ -15,7 +15,7 @@ Scaffold for a YouTube-like site:
 Prerequisite: install Drogon and CMake build tools.
 
 ```bash
-cd /home/runner/work/C-_youtube_like_site/C-_youtube_like_site/backend
+cd backend
 cmake -S . -B build
 cmake --build build
 ./build/youtube_like_backend
@@ -28,7 +28,7 @@ The backend listens on `http://localhost:8080` and exposes:
 ## Run the frontend
 
 ```bash
-cd /home/runner/work/C-_youtube_like_site/C-_youtube_like_site/frontend
+cd frontend
 npm install
 npm run dev
 ```

@@ -3,13 +3,14 @@ import './App.css'
 
 function App() {
   const [status, setStatus] = useState('loading')
+  const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:8080'
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/health')
+    fetch(`${apiUrl}/api/health`)
       .then((response) => response.json())
       .then((data) => setStatus(data.status ?? 'unknown'))
       .catch(() => setStatus('offline'))
-  }, [])
+  }, [apiUrl])
 
   return (
     <main className="app">
