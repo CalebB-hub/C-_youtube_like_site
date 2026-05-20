@@ -1,0 +1,10 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
